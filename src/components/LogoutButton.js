@@ -7,7 +7,7 @@ const LogoutButton = () => {
 
 	return (
 		<Button
-			onClick={() => logout()}
+			onClick={() => logout({ returnTo: window.location.origin })}
 			id="qsLogoutBtn"
 			variant="secondary"
 			className="btn-margin"
